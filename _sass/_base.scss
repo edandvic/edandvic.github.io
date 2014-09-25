@@ -203,11 +203,77 @@ pre {
     }
 }
 
-
-img#album_cover {
-  width: 500px;
+@font-face {
+  font-family: 'Eurostile';
+  src: url('/fonts/eurostile.eot'); /* IE9 Compat Modes */
+  src: url('/fonts/eurostile.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('/fonts/eurostile.woff') format('woff'), /* Modern Browsers */
+       url('/fonts/eurostile.ttf') format('truetype'); /* Safari, Android, iOS */
 }
 
-.home {
+@font-face {
+  font-family: 'Futura';
+  src: url('/fonts/futura.eot'); /* IE9 Compat Modes */
+  src: url('/fonts/futura.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('/fonts/futura.woff') format('woff'), /* Modern Browsers */
+       url('/fonts/futura.ttf') format('truetype'); /* Safari, Android, iOS */
+}
+
+h1 {
+  font-family: 'Eurostile', sans-serif;
+  text-transform: uppercase;
   text-align: center;
+  padding-top: 10px;
 }
+
+p, label, input, button, legend {
+  font-family: 'Futura', Helvetica, Arial, sans-serif;
+}
+
+#content {
+  padding: 40px;
+}
+
+.radio-inline {
+  margin: 5px;
+}
+
+legend {
+  margin-bottom: 5px;
+  margin-top: 10px;
+}
+
+#form_actions {
+  margin-top: 20px;
+}
+
+html, body, .row {
+  height: 100%;
+}
+
+.container-fluid {
+  height: 80%;
+}
+
+#content {
+  overflow: auto;
+  height: 100%;
+}
+
+header {
+  height: 10%;
+}
+
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+//img#album_cover {
+//  width: 500px;
+//}
+
+//.home {
+//  text-align: center;
+//}

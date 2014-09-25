@@ -1,0 +1,19 @@
+<p>Welcome to Ed &amp; Vic's wedding website. Please fill in the form below to
+let us know if you can make it. You'll have an opportunity to let us know who
+else can come and your pie preference.</p>
+
+<form ng-submit="submit(invitee)">
+  <div class="form-group">
+    <label for="first_name">First Name</label>
+    <input type="text" id="first_name" name="first_name" class="form-control"
+    ng-model="invitee.first_name"/>
+  </div>
+  <div class="form-group">
+    <label for="last_name">Last Name</label>
+    <input type="text" id="last_name" name="last_name" class="form-control"
+    ng-model="invitee.last_name"/>
+  </div>
+  <div id="form_actions" class="form-group">
+    <input type="submit" class="btn btn-primary pull-left">
+  </div>
+</form>

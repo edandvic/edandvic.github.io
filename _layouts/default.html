@@ -1,13 +1,19 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="edandvic">
 
   {% include head.html %}
 
   <body>
 
-    <div class="page-content">
-      <div class="wrapper">
-        {{ content }}
+    <header>
+      <h1>The Jesper-Clements Union</h1>
+    </header>
+    <div class="container-fluid">
+      <div class="row">
+        <div id="content" class="col-md-6">{{ content }}</div>
+        <div id="cover" class="col-md-6">
+          <img id="album_cover" class="img-responsive" src="/img/WeddingInvite.png">
+        </div>
       </div>
     </div>
 

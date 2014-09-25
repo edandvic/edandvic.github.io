@@ -1,0 +1,15 @@
+<p>Please deselect anyone who will not be able to attend</p>
+
+<ul>
+  <form ng-submit="submit(names)">
+    <li ng-repeat="invitee in invitees">
+      <label for="{{invitee.id}}">{{invitee.first_name}} {{invitee.last_name}}</label>
+      <input type="checkbox" id="{{invitee.id}}" name="{{invitee.id}}"
+      ng-model="names[invitee.id]"/>
+    </li>
+    <div id="form_actions" class="form-group">
+      <input type="submit" class="btn btn-primary pull-left">
+      <button ng-click="back()" class="btn btn-default pull-right">Back</button>
+    </div>
+  </form>
+</ul>

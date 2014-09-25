@@ -1,0 +1,21 @@
+<p>Which pie you would prefer?</p>
+
+<form ng-submit="submit(invitees)">
+  <div ng-repeat="invitee in invitees">
+    <legend>{{invitee.first_name}} {{invitee.last_name}}</legend>
+    <span ng-repeat="pie in pies" >
+      <label for="{{invitee.id}}-{{$index}}" class="radio-inline">
+        <input type="radio" id="{{invitee.id}}-{{$index}}"
+        ng-model="$parent.invitee.pie" value="{{pie}}"
+        name="{{invitee.id}}" required>
+        {{pie}}
+      </label>
+      <br ng-if="$index == 1">
+    </span>
+    <br>
+  </div>
+  <div id="form_actions" class="form-group">
+    <input type="submit" class="btn btn-primary pull-left">
+    <button ng-click="back()" class="btn btn-default pull-right">Back</button>
+  </div>
+</form>
