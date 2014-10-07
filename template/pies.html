@@ -3,7 +3,7 @@
 
   <form ng-submit="submit(invitees)">
     <div ng-repeat="invitee in invitees" ng-if="invitee.attending">
-      <legend>{{invitee.first_name}} {{invitee.last_name}}</legend>
+      <legend>{{invitee.first_name}}</legend>
       <span ng-repeat="pie in pies" ng-if="invitee.pie">
         <label for="{{invitee.id}}-{{$index}}" class="radio-inline">
           <input type="radio" id="{{invitee.id}}-{{$index}}"

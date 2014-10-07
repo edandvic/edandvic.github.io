@@ -3,7 +3,7 @@
 <ul>
   <form ng-submit="submit(names)">
     <li ng-repeat="invitee in invitees">
-      <label for="{{invitee.id}}">{{invitee.first_name}} {{invitee.last_name}}</label>
+      <label for="{{invitee.id}}">{{invitee.first_name}}</label>
       <input type="checkbox" id="{{invitee.id}}" name="{{invitee.id}}"
       ng-model="invitee.attending"/>
     </li>
