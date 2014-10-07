@@ -227,6 +227,7 @@ myApp.controller('PiesCtrl', ['$scope', '$routeParams', '$http', '$location',
   };
 
   $scope.submit = function(invitees) {
+    $scope.loading = true;
     _.each(invitees, function(invitee) {
       if (typeof(invitee.pie) && invitee.pie == true) {
         invitee.pie = '';
@@ -243,10 +244,12 @@ myApp.controller('PiesCtrl', ['$scope', '$routeParams', '$http', '$location',
     $http({method: 'JSONP', url: url}).then(function(response) {
       console.log('success ', response);
     }, function(err) {
+      $scope.loading = false;
       console.log('err ', err);
     });
   };
 
+  $scope.loading = false;
   invitee = invitees.get($routeParams.id);
   $scope.invitees = invitees.getGroup(invitee.group);
 

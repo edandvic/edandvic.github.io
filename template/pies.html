@@ -1,24 +1,27 @@
-<p>Which pie you would prefer?</p>
+<div ng-hide="loading">
+  <p>Which pie you would prefer?</p>
 
-<form ng-submit="submit(invitees)">
-  <div ng-repeat="invitee in invitees" ng-if="invitee.attending">
-    <legend>{{invitee.first_name}} {{invitee.last_name}}</legend>
-    <span ng-repeat="pie in pies" ng-if="invitee.pie">
-      <label for="{{invitee.id}}-{{$index}}" class="radio-inline">
-        <input type="radio" id="{{invitee.id}}-{{$index}}"
-        ng-model="$parent.invitee.pie" value="{{pie}}"
-        name="{{invitee.id}}" required>
-        {{pie}}
-      </label>
-      <br ng-if="$index == 1">
-    </span>
-    <span ng-if="!invitee.pie">
-      <p>Bangers and Mash</p>
-    </span>
-    <br ng-if="invitee.pie">
-  </div>
-  <div id="form_actions" class="form-group">
-    <button ng-click="back($event)" class="btn btn-default pull-left">Back</button>
-    <input type="submit" class="btn btn-primary pull-right">
-  </div>
-</form>
+  <form ng-submit="submit(invitees)">
+    <div ng-repeat="invitee in invitees" ng-if="invitee.attending">
+      <legend>{{invitee.first_name}} {{invitee.last_name}}</legend>
+      <span ng-repeat="pie in pies" ng-if="invitee.pie">
+        <label for="{{invitee.id}}-{{$index}}" class="radio-inline">
+          <input type="radio" id="{{invitee.id}}-{{$index}}"
+          ng-model="$parent.invitee.pie" value="{{pie}}"
+          name="{{invitee.id}}" required>
+          {{pie}}
+        </label>
+        <br ng-if="$index == 1">
+      </span>
+      <span ng-if="!invitee.pie">
+        <p>Bangers and Mash</p>
+      </span>
+      <br ng-if="invitee.pie">
+    </div>
+    <div id="form_actions" class="form-group">
+      <button ng-click="back($event)" class="btn btn-default pull-left">Back</button>
+      <input type="submit" class="btn btn-primary pull-right">
+    </div>
+  </form>
+</div>
+<img id="loader" src="/img/ajax-loader.gif" ng-show="loading">
