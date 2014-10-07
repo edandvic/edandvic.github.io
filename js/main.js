@@ -227,7 +227,15 @@ myApp.controller('PiesCtrl', ['$scope', '$routeParams', '$http', '$location',
   };
 
   $scope.submit = function(invitees) {
-    console.log('submit ', invitees);
+    _.each(invitees, function(invitee) {
+      if (typeof(invitee.pie) && invitee.pie == true) {
+        invitee.pie = '';
+      } else if (typeof(invitee.pie) && invitee.pie == false) {
+        invitee.pie = "Bangers & Mash";
+      } else {
+        invitee.pie = invitee.pie.replace(',','');
+      };
+    });
 
     var params = setParams(invitees);
     url = 'https://script.google.com/macros/s/AKfycbz4Ato2HMxsKRGQbPWdZXuHOCSpvBXgzBGgt91agEaxTyvyPiRF/exec?jsonp=success'
