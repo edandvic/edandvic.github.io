@@ -8,6 +8,18 @@
     <header>
       <h1>The Jesper-Clements Union</h1>
     </header>
+    <nav class="navbar navbar-default" role="navigation">
+      <div class="container-fluid">
+        <ul class="nav navbar-nav">
+          <li {% if page.url == '/index.html' %}class="active"{% endif %}><a
+            href="/index.html">RSVP</a></li>
+          <li {% if page.url == '/hotels.html' %}class="active"{% endif %}><a
+            href="/hotels.html">Hotels</a></li>
+          <li {% if page.url == '/map.html' %}class="active"{% endif %}><a
+            href="/map.html">Map</a></li>
+        </ul>
+      </div>
+    </nav>
     <div class="container-fluid">
       <div class="row">
         <div id="content" class="col-md-6">{{ content }}</div>
