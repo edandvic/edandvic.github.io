@@ -138,7 +138,7 @@ myApp.service('invitees', ['$window', function(win) {
     {id: 108, group: 53, ceremony: true,  pie: true,  first_name: 'May',         last_name: 'Coady'},
     {id: 109, group: 53, ceremony: true,  pie: true,  first_name: 'Andrew',      last_name: 'Coady'},
     {id: 110, group: 54, ceremony: true,  pie: true,  first_name: 'Ken',         last_name: 'Clements'},
-    {id: 111, group: 54, ceremony: true,  pie: true,  first_name: 'Jill',        last_name: ''},
+    {id: 111, group: 54, ceremony: true,  pie: true,  first_name: 'Jill',        last_name: 'Clements'},
     {id: 998, group: 99, ceremony: true,  pie: true,  first_name: 'Edward',      last_name: 'Clements',    nick: 'Ed'},
     {id: 999, group: 99, ceremony: true,  pie: true,  first_name: 'Victoria',    last_name: 'Jesper',      nick: 'Vic'}
   ];
