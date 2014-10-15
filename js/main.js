@@ -61,8 +61,8 @@ myApp.service('invitees', ['$window', function(win) {
     {id: 31,  group: 11, ceremony: true,  pie: true,  first_name: 'Matthew',     last_name: 'McQuillan'},
     {id: 32,  group: 11, ceremony: true,  pie: true,  first_name: 'Diana',       last_name: 'Policarpo'},
     {id: 33,  group: 12, ceremony: true,  pie: true,  first_name: 'Kevin',       last_name: 'Nichols'},
-    {id: 34,  group: 13, ceremony: false, pie: true,  first_name: 'Josceline',   last_name: 'Howe'},
-    {id: 35,  group: 13, ceremony: false, pie: true,  first_name: 'Gabriel',     last_name: ''},
+    {id: 34,  group: 13, ceremony: false, pie: false, first_name: 'Josceline',   last_name: 'Howe'},
+    {id: 35,  group: 13, ceremony: false, pie: false, first_name: 'Gabriel',     last_name: ''},
     {id: 36,  group: 14, ceremony: true,  pie: true,  first_name: 'Lucy',        last_name: 'Day'},
     {id: 37,  group: 14, ceremony: true,  pie: true,  first_name: 'Michaeljohn', last_name: 'Day'},
     {id: 38,  group: 15, ceremony: true,  pie: true,  first_name: 'Georgina',    last_name: 'Whitehead'},
@@ -75,11 +75,11 @@ myApp.service('invitees', ['$window', function(win) {
     {id: 45,  group: 19, ceremony: true,  pie: true,  first_name: 'Alex',        last_name: 'Frost'},
     {id: 46,  group: 20, ceremony: true,  pie: true,  first_name: 'Alison',      last_name: 'Bik'},
     {id: 47,  group: 20, ceremony: true,  pie: true,  first_name: 'Babur',       last_name: 'Bik',        nick: 'Bik'},
-    {id: 48,  group: 21, ceremony: false, pie: true,  first_name: 'Cara',        last_name: 'Tabaku'},
-    {id: 49,  group: 21, ceremony: false, pie: true,  first_name: 'Leo',         last_name: 'Tabaku'},
-    {id: 50,  group: 22, ceremony: false, pie: true,  first_name: 'Joanna',      last_name: 'Wardle',     nick: 'Jo'},
-    {id: 51,  group: 23, ceremony: false, pie: true,  first_name: 'Emma',        last_name: 'Kitching'},
-    {id: 52,  group: 23, ceremony: false, pie: true,  first_name: 'Alastair',    last_name: 'Kitching'},
+    {id: 48,  group: 21, ceremony: false, pie: false, first_name: 'Cara',        last_name: 'Tabaku'},
+    {id: 49,  group: 21, ceremony: false, pie: false, first_name: 'Leo',         last_name: 'Tabaku'},
+    {id: 50,  group: 22, ceremony: false, pie: false, first_name: 'Joanna',      last_name: 'Wardle',     nick: 'Jo'},
+    {id: 51,  group: 23, ceremony: false, pie: false, first_name: 'Emma',        last_name: 'Kitching'},
+    {id: 52,  group: 23, ceremony: false, pie: false, first_name: 'Alastair',    last_name: 'Kitching'},
     {id: 53,  group: 24, ceremony: true,  pie: true,  first_name: 'Ben',         last_name: 'Piper',      nick: 'Ben'},
     {id: 54,  group: 24, ceremony: true,  pie: true,  first_name: 'Isobel',      last_name: 'Mccarroll'},
     {id: 55,  group: 25, ceremony: true,  pie: true,  first_name: 'Tomos',       last_name: 'Evans'},
@@ -94,7 +94,7 @@ myApp.service('invitees', ['$window', function(win) {
     {id: 64,  group: 30, ceremony: true,  pie: true,  first_name: 'Lisa',        last_name: 'Frith'},
     {id: 65,  group: 31, ceremony: true,  pie: true,  first_name: 'Jacob',       last_name: 'Chivers',    nick: 'Jake'},
     {id: 66,  group: 31, ceremony: true,  pie: true,  first_name: 'Emma',        last_name: 'Lewis'},
-    {id: 67,  group: 32, ceremony: false, pie: true,  first_name: 'Mary',        last_name: 'Togher'},
+    {id: 67,  group: 32, ceremony: false, pie: false, first_name: 'Mary',        last_name: 'Togher'},
     {id: 68,  group: 33, ceremony: true,  pie: true,  first_name: 'Matthew',     last_name: 'Stuttard',   nick: 'Matt'},
     {id: 69,  group: 33, ceremony: true,  pie: true,  first_name: 'Joanna',      last_name: 'Stuttard'},
     {id: 70,  group: 34, ceremony: true,  pie: true,  first_name: 'Thom',        last_name: 'Cooper'},
@@ -161,7 +161,10 @@ myApp.service('invitees', ['$window', function(win) {
     {id: 131, group: 67, ceremony: false, pie: false, first_name: 'Nick',        last_name: 'Mortimer'},
     {id: 132, group: 67, ceremony: false, pie: false, first_name: 'Zara',        last_name: 'Mckenzie'},
     {id: 133, group: 68, ceremony: false, pie: false, first_name: 'Charlie',     last_name: 'Yetton'},
-    {id: 998, group: 99, ceremony: true,  pie: true,  first_name: 'Edward',      last_name: 'Clements',    nick: 'Ed'},
+    {id: 133, group: 68, ceremony: false, pie: false, first_name: 'Charlie',     last_name: 'Yetton'},
+    {id: 134, group: 69, ceremony: true,  pie: true,  first_name: 'Ian',         last_name: 'Dudley'},
+    {id: 135, group: 69, ceremony: true,  pie: true,  first_name: 'Stanislava',  last_name: 'Dikova'},
+    {id: 998, group: 99, ceremony: true,  pie: true, first_name: 'Edward',      last_name: 'Clements',    nick: 'Ed'},
     {id: 999, group: 99, ceremony: true,  pie: true,  first_name: 'Victoria',    last_name: 'Jesper',      nick: 'Vic'}
   ];
 
@@ -205,7 +208,7 @@ myApp.controller('SearchCtrl', ['$scope', '$location', 'invitees', function($sco
 }]);
 
 myApp.controller('NamesCtrl', ['$scope', '$routeParams', '$location',
-    'invitees', function($scope, $routeParams, $location, invitees) {
+  'invitees', 'Data', function($scope, $routeParams, $location, invitees, Data) {
 
   $scope.names = {};
 
@@ -213,7 +216,13 @@ myApp.controller('NamesCtrl', ['$scope', '$routeParams', '$location',
     if ($scope.invitees[0].ceremony) {
       $location.url("/rsvp/"+$routeParams.id+"/pies");
     } else {
-      $location.url("/rsvp/thankyou");
+      $scope.loading = true;
+      Data.submit($scope.invitees).then(function() {
+        $scope.loading = false;
+        $location.url("/rsvp/thankyou");
+      }, function() {
+        $scope.loading = false;
+      });
     }
   };
 
@@ -228,6 +237,8 @@ myApp.controller('NamesCtrl', ['$scope', '$routeParams', '$location',
   _.each($scope.invitees, function(invitee) {
     invitee.attending = true;
   });
+
+  $scope.loading = false
 
 }]);
 
@@ -299,5 +310,46 @@ myApp.controller('PiesCtrl', ['$scope', '$routeParams', '$http', '$location',
 
 myApp.controller('ThankyouCtrl', ['$scope', '$routeParams', '$http', 'invitees',
     function($scope, $routeParams, $http, invitees) {
+
+}]);
+
+myApp.service('Data', ['$http', '$q', '$location', function($http, $q, $location) {
+
+  success = function(x) {
+    $location.url("/rsvp/thankyou");
+  };
+
+  mapParams = function(invitees, param) {
+    return _.map(invitees, function(i) {
+      return encodeURIComponent(i[param]);
+    }).join();
+  };
+
+  appendParam = function(invitees, param) {
+     return '&' + param.replace(',','') + '=' + mapParams(invitees, param);
+  };
+
+  setParams = function(invitees) {
+    return appendParam(invitees, 'first_name') +
+      appendParam(invitees, 'last_name') +
+      appendParam(invitees, 'pie') +
+      appendParam(invitees, 'attending');
+  };
+
+  this.submit = function(invitees) {
+    _.each(invitees, function(invitee) {
+      invitee.pie = '';
+    });
+    defer = $q.defer()
+    var params = setParams(invitees);
+    url = 'https://script.google.com/macros/s/AKfycbz4Ato2HMxsKRGQbPWdZXuHOCSpvBXgzBGgt91agEaxTyvyPiRF/exec?jsonp=success'
+      + params
+    $http({method: 'JSONP', url: url}).then(function(response) {
+      defer.resolve();
+    }, function(err) {
+      defer.reject();
+    });
+    return defer.promise;
+  };
 
 }]);

@@ -1,15 +1,18 @@
-<p>Please deselect anyone who will not be able to attend</p>
+<div ng-hide="loading">
+  <p>Please deselect anyone who will not be able to attend</p>
 
-<ul>
-  <form ng-submit="submit(names)">
-    <li ng-repeat="invitee in invitees">
-      <label for="{{invitee.id}}">{{invitee.first_name}}</label>
-      <input type="checkbox" id="{{invitee.id}}" name="{{invitee.id}}"
-      ng-model="invitee.attending"/>
-    </li>
-    <div id="form_actions" class="form-group">
-      <button ng-click="back($event)" class="btn btn-default pull-left">Back</button>
-      <input type="submit" class="btn btn-primary pull-right">
-    </div>
-  </form>
-</ul>
+  <ul>
+    <form ng-submit="submit(names)">
+      <li ng-repeat="invitee in invitees">
+        <label for="{{invitee.id}}">{{invitee.first_name}}</label>
+        <input type="checkbox" id="{{invitee.id}}" name="{{invitee.id}}"
+        ng-model="invitee.attending"/>
+      </li>
+      <div id="form_actions" class="form-group">
+        <button ng-click="back($event)" class="btn btn-default pull-left">Back</button>
+        <input type="submit" class="btn btn-primary pull-right">
+      </div>
+    </form>
+  </ul>
+</div>
+<img id="loader" src="/img/ajax-loader.gif" ng-show="loading">
