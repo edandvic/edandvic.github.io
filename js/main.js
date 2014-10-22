@@ -133,7 +133,7 @@ myApp.service('invitees', ['$window', function(win) {
     {id: 103, group: 50, ceremony: true,  pie: true,  first_name: 'Jonathan',    last_name: 'Ward'},
     {id: 104, group: 51, ceremony: true,  pie: true,  first_name: 'Stephanie',   last_name: 'Ward'},
     {id: 105, group: 51, ceremony: true,  pie: true,  first_name: 'Nigel',       last_name: 'Ward'},
-    {id: 106, group: 51, ceremony: true,  pie: true,  first_name: 'Emily',       last_name: 'Ward'},
+    {id: 106, group: 51, ceremony: true,  pie: true,  first_name: 'Hannah',      last_name: 'Ward'},
     {id: 107, group: 52, ceremony: true,  pie: true,  first_name: 'Sherrie-jane',last_name: 'Jackson'},
     {id: 108, group: 53, ceremony: true,  pie: true,  first_name: 'May',         last_name: 'Coady'},
     {id: 109, group: 53, ceremony: true,  pie: true,  first_name: 'Andrew',      last_name: 'Coady'},
@@ -164,7 +164,7 @@ myApp.service('invitees', ['$window', function(win) {
     {id: 133, group: 68, ceremony: false, pie: false, first_name: 'Charlie',     last_name: 'Yetton'},
     {id: 134, group: 69, ceremony: true,  pie: true,  first_name: 'Ian',         last_name: 'Dudley'},
     {id: 135, group: 69, ceremony: true,  pie: true,  first_name: 'Stanislava',  last_name: 'Dikova'},
-    {id: 998, group: 99, ceremony: true,  pie: true, first_name: 'Edward',      last_name: 'Clements',    nick: 'Ed'},
+    {id: 998, group: 99, ceremony: true,  pie: true,  first_name: 'Edward',      last_name: 'Clements',    nick: 'Ed'},
     {id: 999, group: 99, ceremony: true,  pie: true,  first_name: 'Victoria',    last_name: 'Jesper',      nick: 'Vic'}
   ];
 
